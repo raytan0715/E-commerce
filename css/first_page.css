@@ -44,7 +44,7 @@ canvas{
 .carousel {
     position: relative;
     overflow: hidden;
-    width: 500px;/*這邊修正*/
+    width: 600px;/*這邊修正*/
     height: 400px;
     margin-left: 50px;
     margin-top: 50px;   

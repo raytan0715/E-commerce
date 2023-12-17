@@ -86,8 +86,9 @@ width: 1100px; margin: 20px auto 0 auto;*/
 }
 
 .product-quantity {
-  padding: 8px;
+  padding: 10px;
   font-size: 16px;
+  border: 1px solid #000;
 }
 .submit-button{
   color: white;

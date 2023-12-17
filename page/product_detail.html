@@ -14,7 +14,7 @@
   <header>
     <nav>
       <div class="icon">
-        <a href="first_page.html"><img src="../img/logo.png" alt=""></a>
+        <a href="index.html"><img src="../img/logo.png" alt=""></a>
       </div>
       <div class="row">
         <ul>
@@ -34,7 +34,7 @@
               <ul class="dropdown-content">
                 <li><a href="login.html">帳號登入/註冊</a></li>
                 <li><a href="membership.html">會員資料</a></li>
-                <li><a href="#">賣家中心</a></li>
+                <li><a href="staff.html">賣家中心</a></li>
               </ul>
           </li>
         </ul>
@@ -69,9 +69,10 @@
           <!--文字-->
           <div class="row-right">
             <div class="product-info">
-              <h1 class="product-title">諾貝爾奶凍</h1>
+
+              <h1 class="product-title">諾貝爾奶凍</h1><!--產品名稱-->
               <div class="line1"></div><!--分隔線(第一種)-->
-              <p class="product-intro">
+              <p class="product-intro"><!--商品文案-->
                 來自宜蘭當地名產。
                 <br>
                 新鮮牛奶以法國諾曼地空運來台做為主要原料，過程中不添加任何一滴水 
@@ -82,20 +83,21 @@
 
               <p>定價: <span class="product-price">200</span>元</p>
 
-              <!--加入購物車-->
+              <!--+-數量以及加入購物車，後端可在這把div改成form，或是在外層加一個form倒是id="submit-form"要留-->
               <div id="submit-form">
                 <button type="button" class="minus product-btn">-</button>
                 <span class="product-quantity">1</span>
                 <button type="button" class="add product-btn">+</button>
                 <button type="submit" class="submit-button">加入購物車</button>
               </div>
+
             </div>
           </div>
 
         </div>
       </div>
     </div>
-    <!--內容物成分-->
+    <!--內容物成分，我們這邊文案需要每個商品每個修正-->
     <div class="detail">
       <h1 class="product-detail-title">商品規格說明</h1>
       <div class="line2"></div>
@@ -108,7 +110,7 @@
         配件:　	每條蛋糕均附手提袋x1、刀子x1<br>
       </p>
     </div>
-    <!--訂購須知-->
+    <!--訂購須知，不用更動，倒是文案可以重寫一個-->
     <div class="detail">
       <h1 class="warning">購買須知</h1>
       <div class="line3"></div>

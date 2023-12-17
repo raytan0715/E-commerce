@@ -79,7 +79,7 @@
   <header>
     <nav>
       <div class="icon">
-        <a href="first_page.html"><img src="../img/logo.png" alt=""></a>
+        <a href="index.html"><img src="../img/logo.png" alt=""></a>
       </div>
       <div class="row">
         <ul>
@@ -91,26 +91,23 @@
                 <li><a href="central.html">中部</a></li>
                 <li><a href="south.html">南部</a></li>
               </ul>
-
           </li>
         </ul>
         <ul>
           <li class="dropdown">
-            <a href="membership.jsp"><i class="fas fa-user"></i> 帳號</a>
+            <a href="login.html"><i class="fas fa-user"></i> 帳號</a>
               <ul class="dropdown-content">
                 <li><a href="login.html">帳號登入/註冊</a></li>
                 <li><a href="membership.html">會員資料</a></li>
-                <li><a href="#">賣家中心</a></li>
+                <li><a href="staff.html">賣家中心</a></li>
               </ul>
           </li>
         </ul>
       </div>
-
       <ul>
         <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> 購物車</a></li>
         <li><a href="about_us.html"><i class="fas fa-info-circle"></i> 關於我們</a></li>
       </ul>
-
     </nav>
   </header>
   <div class="container">
