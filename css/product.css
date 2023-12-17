@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+/*產品介紹*/
+.product {
+    width: 1110px;
+    margin: 0 auto;/*置中*/
+}
+
+.top {
+    width: 100%;
+    background-image: url(../bgimg/背景.jpg);
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.title {
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+    color: blue;
+    text-shadow: 3px 3px 3px white;
+}
+
+.produce {
+    border-radius: 7px;
+    margin: 0 auto;
+    width: 500px;
+    text-align: left;
+    font-size: 20px;
+    padding: 1px;
+    color: #003D79;
+    border-radius: 10%;
+    background-color: white;
+}
+/*產品介紹*/
+
+/*點擊以查看更多*/
+.button-container {
+    padding: 5px;
+    margin: 0 auto;
+    width: 130px;
+    height: 50px;
+    border: 2px solid #642100;
+    text-align: left;
+    background-color: brown;
+    font-size: 16px;
+    border-radius: 10%;
+    text-align: center;
+    color: white;
+}
+
+.button-container .button {
+    color: white;
+}
+.button-container a{
+    text-decoration: none;
+}
+/*點擊以查看更多*/
+
+/*原hotitems newitem等等改成這個*/
+/*此為商品擺放位置*/
+
+/*product.html的card區塊，主要是背景、字形等等設定以及bgimg/file.png的大小*/
+.product-card {
+    width: 100%;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.product-card .card {
+    width: 100%;
+    padding: 5px 30px;
+    background-image: url(../bgimg/file.png);
+    background-size: cover;
+    height: 650px;
+}
+
+/*北中南各自的商品頁面的card區塊，主要是背景、字形等等設定*/
+.product-card .card-respectively{
+    padding: 5px 30px;
+    margin: 20px;
+    background-color: rgb(245, 255, 235);
+    background-size: cover;
+    border-radius: 10%;
+}
+
+
+.row-justify-center{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;/*自動換行*/
+}
+.col{
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+    margin: 20px;
+}
+
+/*card-title在北中南各自的*/
+.product-card .card-title-respectively{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 4px 4px grey;
+}
+/*在product頁面的card-title*/
+.product-card .card-title {
+    margin-bottom:20px;
+    font-size: 30px;
+    color: blue;
+}
+
+
+.card-item a{
+    text-decoration: none;
+    color: #000;
+}
+
+.product-card .card-item {
+    width: 100%;
+    height: 400px;
+    width: 250px;
+}
+.product-card .card-image img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 250px;
+}
+.product-card .card-detail {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+.card-detail .product-name {
+    font-size: 30px;
+}
+.card-detail .product-price {
+    font-size: 20px;
+    color: red;
+}
+.card-detail .product-stock {
+    font-size: 20px;
+    color: orangered;
+}
+.detail-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*中間點擊次數和感謝*/
+.report {
+    padding-top: 100px;
+    width: 100%;
+    font-size: 20px;
+    color: black;
+}
+.card2 {
+    padding: 20px;
+    background-color: #FFFCEC;
+    width:100%;
+    height: 450px;
+    border-radius: 10%;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+}

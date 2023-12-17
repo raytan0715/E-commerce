@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/product_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <title>商品資訊</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="icon">
+        <a href="first_page.html"><img src="../img/logo.png" alt=""></a>
+      </div>
+      <div class="row">
+        <ul>
+          <li class="dropdown">
+            <a href="product.html"><i class="fas fa-cube"></i>產品</a>
+              <ul class="dropdown-content">
+                <li><a href="product.html">全部</a></li>
+                <li><a href="north.html">北部</a></li>
+                <li><a href="central.html">中部</a></li>
+                <li><a href="south.html">南部</a></li>
+              </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="dropdown">
+            <a href="login.html"><i class="fas fa-user"></i> 帳號</a>
+              <ul class="dropdown-content">
+                <li><a href="login.html">帳號登入/註冊</a></li>
+                <li><a href="membership.html">會員資料</a></li>
+                <li><a href="#">賣家中心</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> 購物車</a></li>
+        <li><a href="about_us.html"><i class="fas fa-info-circle"></i> 關於我們</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container"><!--包裹全部-->
+    <div class="detail"><!--商品區間一-->
+      <div class="product-card">
+        <div class="row"><!--style.css中的dsplay:flex;-->
+
+          <!--圖片-->
+          <div class="row-left">
+            <div class="product-image">
+              <div id="main"><!--在此設定圖片，顯示主要圖片-->
+                <img src="../img/控肉販.jpg" alt="" class="main-image">
+              </div>
+              <div id="image-options" class="row"><!--設定底下的四個圖片-->
+                <img data-img="../img/控肉販.jpg" src="../img/控肉販.jpg" alt="" class="col-25 image">
+                <img data-img="../img/芋園.jpg" src="../img/芋園.jpg" alt="" class="col-25 image">
+                <img data-img="../img/淡水阿給.jpg" src="../img/淡水阿給.jpg" alt="" class="col-25 image">
+                <img data-img="../img/杏仁茶.jpg" src="../img/杏仁茶.jpg" alt="" class="col-25 image">
+              </div>
+            </div>
+          </div>
+
+          <!--文字-->
+          <div class="row-right">
+            <div class="product-info">
+              <h1 class="product-title">諾貝爾奶凍</h1>
+              <div class="line1"></div><!--分隔線(第一種)-->
+              <p class="product-intro">
+                來自宜蘭當地名產。
+                <br>
+                新鮮牛奶以法國諾曼地空運來台做為主要原料，過程中不添加任何一滴水 
+                口感鬆軟綿密，帶著濃濃奶香味，嚐起來香甜可口。
+              </p>
+
+              <div class="line1"></div><!--分隔線(第一種)-->
+
+              <p>定價: <span class="product-price">200</span>元</p>
+
+              <!--加入購物車-->
+              <div id="submit-form">
+                <button type="button" class="minus product-btn">-</button>
+                <span class="product-quantity">1</span>
+                <button type="button" class="add product-btn">+</button>
+                <button type="submit" class="submit-button">加入購物車</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--內容物成分-->
+    <div class="detail">
+      <h1 class="product-detail-title">商品規格說明</h1>
+      <div class="line2"></div>
+      <p class="product-detail-content">
+        內容物成份:　	乳酪、鮮奶、砂糖、雞蛋、奶油、麵粉<br>
+        保存期限:　	冷藏約4天<br>
+        素食可否食用:　	蛋奶素<br>
+        產品尺寸/重量:　	約4吋大小 / 315g±3%g<br>
+        外盒尺寸:　	20.5cm x 17.5cm x 7cm<br>
+        配件:　	每條蛋糕均附手提袋x1、刀子x1<br>
+      </p>
+    </div>
+    <!--訂購須知-->
+    <div class="detail">
+      <h1 class="warning">購買須知</h1>
+      <div class="line3"></div>
+      <p class="warning-content">
+        
+        ⭐ 冷藏商品注意事項：
+        <br><br>
+        收到商品時請盡早存入冰箱冷藏勿冷凍，以確保品質新鮮度，冰涼的享用，風味更佳濃郁。本商品為每日限量生鮮食品，除商品本身有瑕疵或運送過程失溫導致食品變質者，可辦理退換貨，一經出貨如無上述之原因者恕無法辦理退換貨，敬請見諒與配合。冷藏類與常溫類產品，不一定同車種配送，到貨時間不盡相同。
+        <br><br>
+        ※ 颱風等天災因素，宣布停止上班，宅配公司將停止配送，恕無法保證當天送達。
+        <br><br>
+        ※ 由於草莓屬新鮮農產品，故草莓奶凍與草莓捲請於收到貨『二天』內嚐鮮期食用完畢，其他奶凍蛋糕請於收到貨『三天』內嚐鮮期食用完畢，到貨日即為第1天計算。
+        <br><br>
+        ※ 奶凍蛋糕捲系列、狀元餅系列每兩盒附一只提袋，需更改提袋數量，請於備註欄告知。
+        <br>
+      </p>
+    </div>
+    <!--商品評論-->
+    <div class="detail" id="detail-comment">
+        <div class="row"><!--水平設定，style.css中有寫-->
+        <button class="tab product-comment"><i class="fas fa-eye"></i> 查看評論</button>
+        <button class="tab write-comment"><i class="fas fa-pen"></i> 寫下評論</button>
+        </div>
+      <div class="comment">
+        <!--別人評價-->
+        <div class="view">
+          
+          <div class="comment-item">
+            <div class="row"><!--水平設定，style.css中有寫-->
+              <div class="userimage">
+                <img src="../bgimg/nigaoe_prokofiev.png" alt="">
+              </div>
+              <span class="user-comment">味道不錯很好吃，是勝者的早餐</span>
+            </div>
+          </div>
+
+          <div class="line4"></div>
+
+          <div class="comment-item">
+            <div class="row"><!--水平設定，style.css中有寫-->
+              <div class="userimage">
+                <img src="../bgimg/nigaoe_prokofiev.png" alt="">
+              </div>
+              <span class="user-comment">出貨速度快</span>
+            </div>
+          </div>
+
+          <div class="line4"></div>
+
+          
+          <div class="comment-item">
+            <div class="row"><!--水平設定，style.css中有寫-->
+              <div class="userimage">
+                <img src="../bgimg/nigaoe_prokofiev.png" alt="">
+              </div>
+              <span class="user-comment">我覺得難吃</span>
+            </div>
+          </div>
+        </div>
+
+        <!--留下評價-->
+
+        <div class="feedback">
+          <form action="" method="post">
+            <div class="my-rating"></div><!--評分星星-->
+            <textarea id="review" name="review" rows="4" cols="50" placeholder="輸入評論"></textarea><!--評價留言板-->
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div><!--container結束-->
+
+  <footer>
+    <h2 class="footer-title">ㄙ口美食團購網</h2>
+    <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
+    <hr>
+    <br><br>
+    <p class="footer-title">Copyright © 2023 All rights reserved.</p>
+  </footer>
+  
+  <script>
+    $( document ).ready(function() {
+      $(".my-rating").starRating({
+      initialRating: 4,
+      strokeColor: '#894A00',
+      strokeWidth: 10,
+      starSize: 25
+    });
+  });
+  </script>
+
+  <script src="../Javascript/star.js"></script>
+  <script src="../Javascript/product_detail.js"></script>
+</body>
+</html>

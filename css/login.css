@@ -1,0 +1,49 @@
+
+.title{
+  text-align: center;
+}
+
+/*中間的登入畫面*/
+.container {
+  display: flex;  
+  position: relative;
+  justify-content: center;
+  height: 500px;
+}
+
+.login_page,
+.signup_page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+
+  background-color: white;
+  border-radius: 5px;
+  border-top: 15px solid #6F8F74;
+  box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup_page {
+  display: none;
+}
+
+.singup-login {
+  margin: 20px;
+  font-size: 20px;
+  color: #a3a2a3;
+}
+
+h5:hover {
+  color: black;
+}
+
+form input {
+  margin-bottom: 10px; /* 調整 input 之間的垂直間距 */
+  width: 70%;
+  padding: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}

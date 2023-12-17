@@ -1,0 +1,74 @@
+.container {
+    /*display: flex;
+    justify-content: center;
+    width: auto;*/
+
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 15% 1fr 15%;
+    grid-auto-flow: row;
+}
+
+.top {
+    background-image: url(../bgimg/背景.jpg);
+    background-size: cover;
+    /*margin: 0 auto;
+    position: absolute;*/
+    top: 300px;
+    width: 1110px;
+    object-fit: cover;
+    border-radius: 10%;
+    grid-area: 1/2/4/3;
+}
+
+.title {
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+    color: blue;
+    text-shadow: 3px 3px 3px white;
+}
+
+.produce {
+    border-radius: 7px;
+    margin: 0 auto;
+    width: 500px;
+    text-align: left;
+    font-size: 20px;
+    padding: 1px;
+    color: #003D79;
+    border-radius: 10%;
+    background-color: white;
+}
+
+/*.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* 調整上方間距 */
+    flex-wrap: wrap;
+    /* 新增這行，處理小屏幕情況下的排列 */
+    grid-area: 4/2/6/3;
+}
+
+.about-item {
+    text-align: center;
+    flex: 1 0 300px;
+    margin: 0 10px;
+}
+
+.about-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.about-item p {
+    font-size: 16px;
+}
