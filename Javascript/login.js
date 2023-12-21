@@ -16,12 +16,11 @@ function loginForm() {
     var email = document.getElementById("loginemail").value;
     var user_password = document.getElementById("loginpassword").value;
 
-    if (email === "" || user_password === "") {
+    if (!email || !user_password) {
         alert("欄位不可空白。");
-        return false;
     } else {
         alert("登入成功");
-        window.open('member.jsp');
+        window.location.href('member.jsp');
     }
 }
 
@@ -33,13 +32,15 @@ function signupForm() {
   var comfirm_password = document.getElementById("comfirm_password").value;
 
   //判斷表單欄位是否為空。
-  if (username==="" || email === "" || user_password === "" || comfirm_password==="") {
+  if (!username || !email || !user_password || !comfirm_password) {
     alert("欄位不可空白。");
-    return false;
   } else {
     
     alert("註冊成功！");
-    window.open('member.jsp');
+    /*這邊用window.location.href('member.jsp');
+    還是window.open('member.jsp');
+     */
+    window.location.href('member.jsp');
   }
 }
 
@@ -51,7 +52,5 @@ function cancel() {
   if (isConfirmed) {
     alert("掰掰");
     window.location.href = "first_page.html";
-  }
-  else { }
-  // 否則不執行跳轉
+  }return
 }

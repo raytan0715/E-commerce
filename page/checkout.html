@@ -20,16 +20,16 @@
           <li class="dropdown">
             <a href="product.html"><i class="fas fa-cube"></i>產品</a>
               <ul class="dropdown-content">
-                <li><a href="product.html">全部</a></li>
-                <li><a href="north.html">北部</a></li>
-                <li><a href="central.html">中部</a></li>
-                <li><a href="south.html">南部</a></li>
+                <li><a href="./product.html">全部</a></li>
+                <li><a href="./north/north.html">北部</a></li>
+                <li><a href="./central/central.html">中部</a></li>
+                <li><a href="./south/south.html">南部</a></li>
               </ul>
           </li>
         </ul>
         <ul>
           <li class="dropdown">
-            <a href="login.html"><i class="fas fa-user"></i> 帳號</a>
+            <a href="membership.html"><i class="fas fa-user"></i> 帳號</a>
               <ul class="dropdown-content">
                 <li><a href="login.html">帳號登入/註冊</a></li>
                 <li><a href="membership.html">會員資料</a></li>
@@ -45,75 +45,87 @@
     </nav>
   </header>
 
-    <div class="checkout-container">
-        <section class="order-details">
-            <h2>訂單詳情</h2>
 
-            <div class="product">
-                <img src="../img/375px-貢丸米粉湯.jpg" alt="商品1">
-                <div class="product-info">
-                    <h3>商品1</h3>
-                    <p>價錢: $10</p>
-                    <p>數量: 2</p>
-                    <p>總計: $20</p>
-                </div>
+  <div class="checkout-container">
+    <section class="order-details">
+        <h2>訂單詳情</h2>
+
+        <div class="product">
+            <img class="productpic" src="../img/北/大湖草莓.jpg" alt="商品1">
+            <div class="product-info">
+                <h3>商品1</h3>
+                <p>價錢: $10</p>
+                <p>數量: 2</p>
+                <p>總計: $20</p>
             </div>
+        </div>
 
-            <div class="product">
-                <img src="path/to/product2.jpg" alt="商品2">
-                <div class="product-info">
-                    <h3>商品2</h3>
-                    <p>價錢: $20</p>
-                    <p>數量: 1</p>
-                    <p>總計: $20</p>
-                </div>
+        <div class="product">
+            <img class="productpic" src="../img/北/新埔新力柿餅.jpg" alt="商品2">
+            <div class="product-info">
+                <h3>商品2</h3>
+                <p>價錢: $20</p>
+                <p>數量: 1</p>
+                <p>總計: $20</p>
             </div>
+        </div>
 
-            <!-- 其他商品內容... -->
-        </section>
+        <!-- 其他商品內容... -->
+    </section>
 
-        <section class="shipping-method">
-            <h2>加購？</h2>
-            <!-- 這裡放入寄送方式的選項 -->
-        </section>
+  
+    <section class="customer-details">
+      <h2>填寫顧客資料</h2>
+      <h3 class="color">還不是會員？趕緊按以下按鈕，進行註冊！</h3>
+    <button onclick="register()">會員註冊</button>
+      <h3 class="color">已經是會員？立即登入！</h3>
+      <button onclick="login()">會員登入</button>
+      <form>
+          <label for="customer-name">顧客名稱:</label>
+          <input type="text" id="customer-name" name="customer-name" required>
 
-        <section class="customer-details">
-            <h2>填寫顧客資料</h2>
-            <h3>已經是會員？立即登入！</h3>
-            <button onclick="login()">會員登入</button>
-            <form>
-                <label for="customer-name">顧客名稱:</label>
-                <input type="text" id="customer-name" name="customer-name" required>
+          <label for="email">電子信箱:</label>
+          <input type="email" id="email" name="email" required>
 
-                <label for="email">電子信箱:</label>
-                <input type="email" id="email" name="email" required>
+          <label for="phone">電話:</label>
+          <input type="tel" id="phone" name="phone" required>
+      </form>
+      
+  </section>
 
-                <label for="phone">電話:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </form>
-            
-        </section>
+  <section class="delivery-method">
+    <h2>送貨及付款方式</h2>
+    <label for="payment-method">選擇付款方式:</label>
+    <select id="payment-method" name="payment-method">
+        <option value="credit-card">請選擇方式</option>
+        <option value="credit-card">信用卡付款</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank-transfer">銀行轉帳</option>
+        <option value="convenience-store">超商繳費付款</option>
+        <!-- 其他付款方式... -->
+    </select>
+      
+      <label for="address">地址:</label>
+      <input type="text" id="address" name="address" required>
+      
+</section>
 
-        <section class="delivery-method">
-            <h2>送貨及付款方式</h2>
-            <!-- 這裡放入送貨方式的選項 -->
-        </section>
+    <section class="order-notes">
+        <h2>訂單備註</h2>
+        <textarea id="order-notes" rows="4" cols="50" placeholder="在這裡留下您的備註..."></textarea>
+    </section>
 
-        <section class="order-notes">
-            <h2>訂單備註</h2>
-            <textarea id="order-notes" rows="4" cols="50" placeholder="在這裡留下您的備註..."></textarea>
-        </section>
+    <button onclick="placeOrder()">確認結帳</button>
+</div>
 
-        <button onclick="placeOrder()">確認結帳</button>
-    </div>
-
-    <footer>
-      <h2 class="footer-title">ㄙ口美食團購網</h2>
-      <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
-      <hr>
-      <br><br>
-      <p class="footer-title">Copyright © 2023 All rights reserved.</p>
-    </footer>
-    <script src="../Javascript/checkout.js" ></script>
+<footer>
+  <h2 class="footer-title">ㄙ口美食團購網</h2>
+  <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../bgimg/map.jpg" alt=""></a></div>	
+  <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
+  <hr>
+  <br><br>
+  <p class="footer-title">Copyright © 2023 All rights reserved.</p>
+</footer>
+<script src="../Javascript/checkout.js" ></script>
 </body>
 </html>

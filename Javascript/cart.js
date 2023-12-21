@@ -1,4 +1,5 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || []
+/*儲存庫拿資料 */
 
 // 購物車
 function renderCart() {
@@ -62,3 +63,4 @@ function checkout() {
 }
 
 renderCart();
+/*重新渲染資料 */

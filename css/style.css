@@ -1,5 +1,8 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 *{/*字體設計*/
-    font-family: Arial, sans-serif,微軟正黑體;
+
+    font-family: "cwTeXYen", sans-serif;
+
 }
 /*NAV區塊*/
 /*當今天是長頁面，若是要產品頁要弄得畫 header class="position-fixed"*/
@@ -100,9 +103,10 @@ body {
 
 /*footer區塊*/
 footer {
+    margin-top: 10px;
     background-color: #7C9788;
     padding: 10px;
-    height: 250px;
+    height: auto;
 }
 .footer-title{
     color: white;
@@ -112,4 +116,11 @@ footer .footer-title a {
 }
 footer .footer-title a:hover{
     color: green;
+}
+/*map*/
+.footer-map img{
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+	border-color: #ccc;
 }

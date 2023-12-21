@@ -28,9 +28,42 @@ label {
     margin-bottom: 5px;
 }
 
+.color{
+    color: #7E3D76;
+}
+
+.productpic{
+    width: 60%;
+    height: 50%;
+}
+
+
+.customer-details{
+    border: 3px solid #17341E;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #F0F0F0;
+}
+
+.delivery-method{
+    border: 3px solid #17341E;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background-color: #F0F0F0;
+}
+.order-notes{
+    border: 3px solid #17341E;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #F0F0F0;
+}
+
 input,
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 8px;
     margin-bottom: 10px;
 }

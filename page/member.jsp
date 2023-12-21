@@ -86,16 +86,16 @@
           <li class="dropdown">
             <a href="product.html"><i class="fas fa-cube"></i>產品</a>
               <ul class="dropdown-content">
-                <li><a href="product.html">全部</a></li>
-                <li><a href="north.html">北部</a></li>
-                <li><a href="central.html">中部</a></li>
-                <li><a href="south.html">南部</a></li>
+                <li><a href="./product.html">全部</a></li>
+                <li><a href="./north/north.html">北部</a></li>
+                <li><a href="./central/central.html">中部</a></li>
+                <li><a href="./south/south.html">南部</a></li>
               </ul>
           </li>
         </ul>
         <ul>
           <li class="dropdown">
-            <a href="login.html"><i class="fas fa-user"></i> 帳號</a>
+            <a href="member.jsp"><i class="fas fa-user"></i> 帳號</a>
               <ul class="dropdown-content">
                 <li><a href="login.html">帳號登入/註冊</a></li>
                 <li><a href="membership.html">會員資料</a></li>
@@ -110,6 +110,8 @@
       </ul>
     </nav>
   </header>
+
+  
   <div class="container">
     <div class="datasection">
       <h1>個人資料</h1>
@@ -179,12 +181,13 @@
     <a href="#top"><img class="backtop" src="../bgimg/back_top.png" alt="top"></a>
 
     <footer>
-      <h2>ㄙ口美食團購網</h2>
-      <h1 class="contact_link">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
+      <h2 class="footer-title">ㄙ口美食團購網</h2>
+      <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../bgimg/map.jpg" alt=""></a></div>	
+      <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
       <hr>
       <br><br>
-      <p>Copyright © 2023 All rights reserved.</p>
-  </footer>
+      <p class="footer-title">Copyright © 2023 All rights reserved.</p>
+    </footer>
 </body>
     
 <script src="../Javascript/membership.js"></script>

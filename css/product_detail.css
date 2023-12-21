@@ -60,13 +60,14 @@ width: 1100px; margin: 20px auto 0 auto;*/
   margin-top: 10px;
   background-color: #7C9788;
 }
+/*用不到了
 .line2 {
   height: 4px;
   width: 300px;
   margin: 3px 0px;
   margin-top: 10px;
   background-color: #7C9788;
-}
+}*/
 .line3 {
   height: 4px;
   margin: 4px 0;
@@ -88,7 +89,6 @@ width: 1100px; margin: 20px auto 0 auto;*/
 .product-quantity {
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #000;
 }
 .submit-button{
   color: white;
@@ -96,8 +96,8 @@ width: 1100px; margin: 20px auto 0 auto;*/
 }
 
 /*文字*/
-.product-detail-content{
-  padding: 15px;
+.product-title{
+  font-size: 40px;
 }
 .warning{
   text-align: center;

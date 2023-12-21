@@ -10,3 +10,16 @@ function placeOrder() {
 function login() {
     window.location.href = 'login.html';
 }
+function register() {
+    window.location.href = 'login.html';
+}
+
+
+
+function placeOrder() {
+
+    window.alert("訂單已成功購買！感謝您的購物。");
+
+    window.location.href = "membership.html";
+  
+}

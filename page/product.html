@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/cookie.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <title>product</title>
 </head>
@@ -21,16 +22,16 @@
           <li class="dropdown">
             <a href="product.html"><i class="fas fa-cube"></i>產品</a>
               <ul class="dropdown-content">
-                <li><a href="product.html">全部</a></li>
-                <li><a href="north.html">北部</a></li>
-                <li><a href="central.html">中部</a></li>
-                <li><a href="south.html">南部</a></li>
+                <li><a href="./product.html">全部</a></li>
+                <li><a href="./north/north.html">北部</a></li>
+                <li><a href="./central/central.html">中部</a></li>
+                <li><a href="./south/south.html">南部</a></li>
               </ul>
           </li>
         </ul>
         <ul>
           <li class="dropdown">
-            <a href="login.html"><i class="fas fa-user"></i> 帳號</a>
+            <a href="membership.html"><i class="fas fa-user"></i> 帳號</a>
               <ul class="dropdown-content">
                 <li><a href="login.html">帳號登入/註冊</a></li>
                 <li><a href="membership.html">會員資料</a></li>
@@ -92,17 +93,52 @@
                 </div>
               </div><!--col結束-->
             </template>
+            
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./north/cakeRoll.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/375px-貢丸米粉湯.jpg" alt="">
+                    <img src="../img/北/諾貝爾奶凍捲.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">新竹貢丸湯</p><!--產品名稱-->
+                    <p class="product-name">奶凍捲</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$200</span>
+                      <span class="product-price">$180</span>
+                      <span class="product-stock">庫存 30</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a><!--a結束-->
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./central/PineappleCake.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="../img/中/鳳梨酥.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">微熱山丘鳳梨酥 - 15個裝</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$750</span>
+                      <span class="product-stock">庫存 60</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./south/Mango.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="../img/南/愛文芒果.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">玉井愛文芒果</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$1350</span>
                       <span class="product-stock">庫存 20</span>
                     </div><!--detail-container結束-->
                   </div>
@@ -110,39 +146,6 @@
               </div>
             </div><!--col結束-->
 
-            <div class="col"><!--col每個商品card區塊-->
-              <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
-                  <div class="card-image">
-                    <img src="../img/太陽餅.jpg" alt="">
-                  </div>
-                  <div class="card-detail">
-                    <p class="product-name">太陽餅</p><!--產品名稱-->
-                    <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$300</span>
-                      <span class="product-stock">庫存: 30</span>
-                    </div><!--detail-container結束-->
-                  </div>
-                </a>
-              </div>
-            </div><!--col結束-->
-
-            <div class="col"><!--col每個商品card區塊-->
-              <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
-                  <div class="card-image">
-                    <img src="../img/嘉義方塊酥.jpg" alt="">
-                  </div>
-                  <div class="card-detail">
-                    <p class="product-name">嘉義方塊酥</p><!--產品名稱-->
-                    <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$150</span>
-                      <span class="product-stock">庫存: 15</span>
-                    </div><!--detail-container結束-->
-                  </div><!--detail-container結束-->
-                </div><!--card-detail結束-->
-              </a><!--a結束-->
-            </div><!--col結束-->
           </div><!--row結束-->
         </div><!--card結束-->
       </div><!--product-card-->
@@ -157,53 +160,53 @@
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./north/taro.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/375px-貢丸米粉湯.jpg" alt="">
-                  </div><!--card-image結束-->
+                    <img src="../img/北/金山芋園.jpg" alt="">
+                  </div>
                   <div class="card-detail">
-                    <p class="product-name">新竹貢丸湯</p><!--產品名稱-->
+                    <p class="product-name">【芋圓王】生鮮冷凍芋圓/地瓜圓</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$170</span>
+                      <span class="product-stock">庫存: 8</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./south/Milkfish.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="../img/南/虱目魚肚.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">虱目魚肚280g~320g	</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
                       <span class="product-price">$200</span>
                       <span class="product-stock">庫存 20</span>
                     </div><!--detail-container結束-->
-                  </div><!--card-detail結束-->
-                </a><!--a結束-->
-              </div><!--card-item結束-->
+                  </div>
+                </a>
+              </div>
             </div><!--col結束-->
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./central/chickenfeet.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/太陽餅.jpg" alt="">
-                  </div><!--card-image結束-->
-                  <div class="card-detail">
-                    <p class="product-name">太陽餅</p><!--產品名稱-->
-                    <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$300</span>
-                      <span class="product-stock">庫存: 30</span>
-                    </div><!--detail-container結束-->
-                  </div><!--card-detail結束-->
-                </a><!--a結束-->
-              </div><!--card-item結束-->
-            </div><!--col結束-->
-
-            <div class="col"><!--col每個商品card區塊-->
-              <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
-                  <div class="card-image">
-                    <img src="../img/嘉義方塊酥.jpg" alt="">
+                    <img src="../img/中/雞腳凍.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">嘉義方塊酥</p><!--產品名稱-->
+                    <p class="product-name">黑竹園招牌雞腳凍</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$150</span>
-                      <span class="product-stock">庫存: 15</span>
+                      <span class="product-price">$180</span>
+                      <span class="product-stock">庫存 26</span>
                     </div><!--detail-container結束-->
-                  </div><!--detail-container結束-->
-                </div><!--card-detail結束-->
-              </a><!--a結束-->
+                  </div>
+                </a>
+              </div>
             </div><!--col結束-->
           </div><!--row結束-->
         </div><!--card結束-->
@@ -264,15 +267,15 @@
             
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./north/cakeRoll.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/375px-貢丸米粉湯.jpg" alt="">
+                    <img src="../img/北/諾貝爾奶凍捲.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">新竹貢丸湯</p><!--產品名稱-->
+                    <p class="product-name">奶凍捲</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$200</span>
-                      <span class="product-stock">庫存 20</span>
+                      <span class="product-price">$180</span>
+                      <span class="product-stock">庫存 30</span>
                     </div><!--detail-container結束-->
                   </div>
                 </a><!--a結束-->
@@ -281,15 +284,15 @@
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./north/DriedPersimmon.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/太陽餅.jpg" alt="">
+                    <img src="../img/北/新埔新力柿餅.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">太陽餅</p><!--產品名稱-->
+                    <p class="product-name">新埔新力柿餅</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$300</span>
-                      <span class="product-stock">庫存: 30</span>
+                      <span class="product-price">$230</span>
+                      <span class="product-stock">庫存: 50</span>
                     </div><!--detail-container結束-->
                   </div>
                 </a>
@@ -298,14 +301,14 @@
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./north/IronEgg.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/嘉義方塊酥.jpg" alt="">
+                    <img src="../img/北/原味鐵蛋.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">嘉義方塊酥</p><!--產品名稱-->
+                    <p class="product-name">原味鐵蛋-(雞蛋滷製)</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$150</span>
+                      <span class="product-price">$120</span>
                       <span class="product-stock">庫存: 15</span>
                     </div><!--detail-container結束-->
                   </div>
@@ -314,10 +317,11 @@
             </div><!--col結束-->
           </div><!--row結束-->
           <div class="button-container"><!--按鈕點擊查看更多-->
-            <a href="about_us.html" class="button">點擊以查看更多</a>
+            <a href="../page/north/north.html" class="button">點擊以查看更多</a>
           </div><!--button-container結束-->
         </div><!--card結束-->
       </div><!--product-card-->
+
 
       <!--中部-->
       <div class="product-card"><!--最外層的框架，設定整個card多大-->
@@ -326,15 +330,15 @@
           <div class="row-justify-center"><!--row是style.css裡面設定display:flex;和justify-content:space-center;-->
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./central/PineappleCake.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/375px-貢丸米粉湯.jpg" alt="">
+                    <img src="../img/中/鳳梨酥.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">新竹貢丸湯</p><!--產品名稱-->
+                    <p class="product-name">微熱山丘鳳梨酥 - 15個裝</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$200</span>
-                      <span class="product-stock">庫存 20</span>
+                      <span class="product-price">$750</span>
+                      <span class="product-stock">庫存 60</span>
                     </div><!--detail-container結束-->
                   </div>
                 </a>
@@ -343,15 +347,15 @@
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./central/suncake.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/太陽餅.jpg" alt="">
+                    <img src="../img/中/太陽堂太陽餅.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">太陽餅</p><!--產品名稱-->
+                    <p class="product-name">經典太陽餅禮盒</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$300</span>
-                      <span class="product-stock">庫存: 30</span>
+                      <span class="product-price">$499</span>
+                      <span class="product-stock">庫存 39</span>
                     </div><!--detail-container結束-->
                   </div>
                 </a>
@@ -360,43 +364,46 @@
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./central/chickenfeet.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/嘉義方塊酥.jpg" alt="">
+                    <img src="../img/中/雞腳凍.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">嘉義方塊酥</p><!--產品名稱-->
+                    <p class="product-name">黑竹園招牌雞腳凍</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$150</span>
-                      <span class="product-stock">庫存: 15</span>
+                      <span class="product-price">$180</span>
+                      <span class="product-stock">庫存 26</span>
                     </div><!--detail-container結束-->
                   </div>
                 </a>
               </div>
             </div><!--col結束-->
+
           </div><!--row結束-->
           <div class="button-container"><!--按鈕點擊查看更多-->
-            <a href="about_us.html" class="button">點擊以查看更多</a>
+            <a href="../page/central/central.html" class="button">點擊以查看更多</a>
           </div><!--button-container結束-->
         </div><!--card結束-->
       </div><!--product-card-->
 
-      <!--南部-->
-      <div class="product-card"><!--最外層的框架，設定整個card多大-->
+      
+       <!--南部-->
+       <div class="product-card"><!--最外層的框架，設定整個card多大-->
         <div class="card"><!--card包覆整個的頁面，file.jpg-->
           <P class="card-title">南部商品</P>
           <div class="row-justify-center"><!--row是style.css裡面設定display:flex;和justify-content:space-center;-->
+            
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./south/TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/375px-貢丸米粉湯.jpg" alt="">
+                    <img src="../img/南/火雞肉飯.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">新竹貢丸湯</p><!--產品名稱-->
+                    <p class="product-name">【頂六江家火雞肉飯】火雞肉絲真空包</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$200</span>
-                      <span class="product-stock">庫存 20</span>
+                      <span class="product-price">$450</span>
+                      <span class="product-stock">庫存 10</span>
                     </div><!--detail-container結束-->
                   </div>
                 </a>
@@ -405,14 +412,14 @@
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./south/PeanutBrittle.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/太陽餅.jpg" alt="">
+                    <img src="../img/南/花生糖.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">太陽餅</p><!--產品名稱-->
+                    <p class="product-name">木侖花生糖	</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$300</span>
+                      <span class="product-price">$375</span>
                       <span class="product-stock">庫存: 30</span>
                     </div><!--detail-container結束-->
                   </div>
@@ -422,14 +429,14 @@
 
             <div class="col"><!--col每個商品card區塊-->
               <div class="card-item"><!--設定每個card區塊的大小-->
-                <a href="test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                <a href="./south/SquaerCookie.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
                   <div class="card-image">
-                    <img src="../img/嘉義方塊酥.jpg" alt="">
+                    <img src="../img/南/方塊酥.jpg" alt="">
                   </div>
                   <div class="card-detail">
-                    <p class="product-name">嘉義方塊酥</p><!--產品名稱-->
+                    <p class="product-name">恩典方塊酥-典藏禮盒綜合單片(16入)</p><!--產品名稱-->
                     <div class="detail-container"><!--價錢和庫存-->
-                      <span class="product-price">$150</span>
+                      <span class="product-price">$280</span>
                       <span class="product-stock">庫存: 15</span>
                     </div><!--detail-container結束-->
                   </div>
@@ -438,22 +445,30 @@
             </div><!--col結束-->
           </div><!--row結束-->
           <div class="button-container"><!--按鈕點擊查看更多-->
-            <a href="about_us.html" class="button">點擊以查看更多</a>
+            <a href="../page/south/south.html" class="button">點擊以查看更多</a>
           </div><!--button-container結束-->
         </div><!--card結束-->
       </div><!--product-card-->
       <a href="#top"><img class="backtop" src="../bgimg/back_top.png" alt="top"></a>
     </div>
   </div>
-  
+
+  <!--cookie設定-->
+  <div id="cookie-popup">
+    <p>我們使用cookie來提供和改善我們的服務。繼續使用本網站，您同意我們使用cookie。</p>
+    <button class="accept-cookies">同意</button>
+  </div>
+
   <footer>
     <h2 class="footer-title">ㄙ口美食團購網</h2>
+    <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../bgimg/map.jpg" alt=""></a></div>	
     <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
     <hr>
     <br><br>
     <p class="footer-title">Copyright © 2023 All rights reserved.</p>
   </footer>
 
+  <script src="../Javascript/cookie.js"></script>
 </body>
 
 </html>
