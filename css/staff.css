@@ -1,25 +1,29 @@
 .staff{
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 15% 1fr 1fr 1fr;
+    grid-template: 60px 1fr 1fr 1fr 1fr 1fr / 15% 1fr 1fr 1fr;
     grid-auto-flow: row;
 }
 
 .product{
-    grid-area: 1/2/3/5;
+    grid-area: 1/1/3/5;
     padding-left: 20px;
     padding-bottom: 50px;
 }
 
 .order{
-    grid-area: 3/2/5/5;
+    grid-area: 3/1/5/5;
     padding-left: 20px;
     padding-bottom: 50px;
 }
 
 
-.aside{
-    grid-area: 1/1/7/2;
+.top{
+    grid-area: 1/1/2/5;
+    padding: 20px;
     background-color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .link{
@@ -37,9 +41,7 @@
     padding: 10px;
 }
 
-.change_product{
-    padding: 10px;
-}
+
 
 .order_list{
     padding: 10px;
