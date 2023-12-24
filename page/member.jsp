@@ -86,19 +86,20 @@
           <li class="dropdown">
             <a href="product.html"><i class="fas fa-cube"></i>產品</a>
               <ul class="dropdown-content">
-                <li><a href="./product.html">全部</a></li>
-                <li><a href="./north/north.html">北部</a></li>
-                <li><a href="./central/central.html">中部</a></li>
-                <li><a href="./south/south.html">南部</a></li>
+                <li><a href="product.html">全部</a></li>
+                <li><a href="north.html">北部</a></li>
+                <li><a href="central.html">中部</a></li>
+                <li><a href="south.html">南部</a></li>
               </ul>
           </li>
         </ul>
         <ul>
           <li class="dropdown">
-            <a href="member.jsp"><i class="fas fa-user"></i> 帳號</a>
+            <a href="login.html"><i class="fas fa-user"></i> 帳號</a>
               <ul class="dropdown-content">
                 <li><a href="login.html">帳號登入/註冊</a></li>
                 <li><a href="membership.html">會員資料</a></li>
+                <li><a href="staff_login.html">賣家登入</a></li>
                 <li><a href="staff.html">賣家中心</a></li>
               </ul>
           </li>
@@ -110,7 +111,6 @@
       </ul>
     </nav>
   </header>
-
   
   <div class="container">
     <div class="datasection">
