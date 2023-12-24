@@ -33,9 +33,17 @@ label {
 }
 
 .productpic{
-    width: 60%;
-    height: 50%;
+    max-width: 100%; 
+    height: auto;
+    padding: 10px;
 }
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    gap: 0px; 
+  }
 
 
 .customer-details{
