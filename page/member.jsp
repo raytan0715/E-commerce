@@ -95,7 +95,7 @@
         </ul>
         <ul>
           <li class="dropdown">
-            <a href="login.html"><i class="fas fa-user"></i> 帳號</a>
+            <a href="membership.jsp"><i class="fas fa-user"></i> 帳號</a>
               <ul class="dropdown-content">
                 <li><a href="login.html">帳號登入/註冊</a></li>
                 <li><a href="membership.html">會員資料</a></li>
@@ -111,6 +111,7 @@
       </ul>
     </nav>
   </header>
+
   
   <div class="container">
     <div class="datasection">
