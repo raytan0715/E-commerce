@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/checkout.css">
+  <link rel="stylesheet" href="../css/cart.css">
   <link rel="stylesheet" type="text/css" href="../css/staff.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <script src="../Javascript/cart.js" defer></script>
@@ -22,12 +23,12 @@
         <ul>
           <li class="dropdown">
             <a href="product.html"><i class="fas fa-cube"></i>產品</a>
-              <ul class="dropdown-content">
-                <li><a href="product.html">全部</a></li>
-                <li><a href="./north/north.html">北部</a></li>
-                <li><a href="./central/central.html">中部</a></li>
-                <li><a href="./south/south.html">南部</a></li>
-              </ul>
+            <ul class="dropdown-content">
+              <li><a href="product.html">全部</a></li>
+              <li><a href="./north/north.html">北部</a></li>
+              <li><a href="./central/central.html">中部</a></li>
+              <li><a href="./south/south.html">南部</a></li>
+            </ul>
           </li>
         </ul>
         <ul>
@@ -55,60 +56,113 @@
       <button class="link search"><i class="fas fa-pen"></i> 瀏覽訂單</button>
     </div>
 
-    <div class="staff-product">
-        <!-- Product Content -->
-        <div class="product">
-          <h2>商品名</h2>
-          <h2>商品刪除</h2>
-          <div class="move_product">
-            <h3>上架商品</h3>
-          </div>
-          <div class="remove_product">
-            <h3>下架商品</h3>
-          </div>
-          <h2>商品價格</h2>
-        </div>
+    <div class="view">
+      <div class="product">
+        
+        <h2 class="product-change">商品更改</h2></br>
+        <table id="cart">
+
+          <thead>
+            <tr>
+              <th>商品名</th>
+              <th>庫存</th>
+              <th>單價</th>
+              <th>價格</th>
+              <th>操作(下架商品)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 商品項目將動態插入這裡 -->
+          </tbody>
+        </table>
+
+      </div>
     </div>
 
-    <div class="staff-order">
-      <h2>瀏覽訂單</h2>
-      <div class="order_list">
-        <div class="checkout-container">
-          <section class="order-details">
-            <h2>訂單詳情</h2>
-            <div class="product">
-              <img src="../img/北/金山芋園.jpg" alt="商品1">
-              <div class="product-info">
-                <h3>商品1</h3>
-                <p>價錢: $10</p>
-                <p>庫存: 2</p>
-                <p>總計: $20</p>
+    <div class="feedback">
+      <div class="order">
+        <h2>瀏覽訂單</h2>
+        <div class="order_list">
+          <div class="checkout-container">
+            <section class="order-details">
+              <h2>訂單詳情</h2>
+
+              <p>名稱: <span class="information" id="name">無名</span></p>
+              <p>出生年月日: <span class="information" id="dob">0000/00/00</span></p>
+              <p>電話號碼: <span class="information" id="phone">09123456</span></p>
+              <p>寄送地址: <span class="information" id="address">320桃園市中壢區中北路200號</span></p>
+              <p>信箱: <span class="information" id="email">email123@gmail.com</span></p>
+
+              <div class="product">
+                <img src="../img/北/金山芋園.jpg" alt="商品1">
+                <div class="product-info">
+                  <h3>商品1</h3>
+                  <p>價錢: $10</p>
+                  <p>庫存: 2</p>
+                  <p>總計: $20</p>
+                </div>
               </div>
-            </div>
-            <div class="product">
-              <img src="path/to/product2.jpg" alt="商品2">
-              <div class="product-info">
-                <h3>商品2</h3>
-                <p>價錢: $20</p>
-                <p>庫存: 3</p>
-                <p>總計: $20</p>
+
+              <div class="product">
+                <img src="path/to/product2.jpg" alt="商品2">
+                <div class="product-info">
+                  <h3>商品2</h3>
+                  <p>價錢: $20</p>
+                  <p>庫存: 3</p>
+                  <p>總計: $20</p>
+                </div>
               </div>
-            </div>
-            <!-- 其他商品內容... -->
-          </section>
+
+              <!-- 其他商品內容... -->
+            </section>
+
+            <section class="order-details">
+              <h2>訂單詳情</h2>
+
+              <p>名稱: <span class="information" id="name">無名</span></p>
+              <p>出生年月日: <span class="information" id="dob">0000/00/00</span></p>
+              <p>電話號碼: <span class="information" id="phone">09123456</span></p>
+              <p>寄送地址: <span class="information" id="address">320桃園市中壢區中北路200號</span></p>
+              <p>信箱: <span class="information" id="email">email123@gmail.com</span></p>
+
+              <div class="product">
+                <img src="../img/北/金山芋園.jpg" alt="商品1">
+                <div class="product-info">
+                  <h3>商品1</h3>
+                  <p>價錢: $10</p>
+                  <p>庫存: 2</p>
+                  <p>總計: $20</p>
+                </div>
+              </div>
+
+              <div class="product">
+                <img src="path/to/product2.jpg" alt="商品2">
+                <div class="product-info">
+                  <h3>商品2</h3>
+                  <p>價錢: $20</p>
+                  <p>庫存: 3</p>
+                  <p>總計: $20</p>
+                </div>
+              </div>
+
+              <!-- 其他商品內容... -->
+            </section>
+          </div>
         </div>
       </div>
     </div>
-</div>
+  </div>
 
-<footer>
-  <h2 class="footer-title">ㄙ口美食團購網</h2>
-  <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../../bgimg/map.jpg" alt=""></a></div>
-  <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
-  <hr>
-  <br><br>
-  <p class="footer-title">Copyright 此網站主要以教學用途使用.</p>
-</footer>
+  <footer>
+    <h2 class="footer-title">ㄙ口美食團購網</h2>
+    <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img
+          src="../../bgimg/map.jpg" alt=""></a></div>
+    <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
+    <hr>
+    <br><br>
+    <p class="footer-title">Copyright 此網站主要以教學用途使用.</p>
+  </footer>
+
   <script src="../Javascript/staff.js"></script>
 </body>
 

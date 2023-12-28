@@ -1,14 +1,12 @@
-document.addEventListener('click', (e) => {
-  const merchandise = document.querySelector('.staff-product');
-  const search = document.querySelector('.staff-order');
+const view = document.querySelector('.view');
+const feedback = document.querySelector('.feedback');
 
-  if (e.target.classList.contains('product')) {
-    merchandise.style.display = "none";
-    search.style.display = "block";
-  }
+document.querySelector('.link.merchandise').addEventListener('click', () => {
+  feedback.style.display = 'none';
+  view.style.display = 'block';
+});
 
-  if (e.target.classList.contains('search')) {
-    merchandise.style.display = "block";
-    search.style.display = "none";
-  }
+document.querySelector('.link.search').addEventListener('click', () => {
+  feedback.style.display = 'block';
+  view.style.display = 'none';
 });
