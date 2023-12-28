@@ -1,12 +1,14 @@
-detailComment.addEventListener('click', (e) => {
-    const view = document.querySelector('.view')
-    const feedback = document.querySelector('.feedback')
-    if (e.target.className.includes('product')) {
-      feedback.style.display = "none";
-      view.style.display = "block";
-    }
-    if (e.target.className.includes('order')) {
-      feedback.style.display = "block";
-      view.style.display = "none";
-    }
-  })
+document.addEventListener('click', (e) => {
+  const merchandise = document.querySelector('.staff-product');
+  const search = document.querySelector('.staff-order');
+
+  if (e.target.classList.contains('product')) {
+    merchandise.style.display = "none";
+    search.style.display = "block";
+  }
+
+  if (e.target.classList.contains('search')) {
+    merchandise.style.display = "block";
+    search.style.display = "none";
+  }
+});

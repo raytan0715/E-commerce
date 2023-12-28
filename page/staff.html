@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/checkout.css">
-    <link rel="stylesheet" type="text/css" href="../css/staff.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="../Javascript/cart.js" defer></script>
-    <title>後台</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/checkout.css">
+  <link rel="stylesheet" type="text/css" href="../css/staff.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="../Javascript/cart.js" defer></script>
+  <title>後台</title>
 </head>
+
 <body>
   <header>
     <nav>
@@ -22,21 +24,21 @@
             <a href="product.html"><i class="fas fa-cube"></i>產品</a>
               <ul class="dropdown-content">
                 <li><a href="product.html">全部</a></li>
-                <li><a href="north.html">北部</a></li>
-                <li><a href="central.html">中部</a></li>
-                <li><a href="south.html">南部</a></li>
+                <li><a href="./north/north.html">北部</a></li>
+                <li><a href="./central/central.html">中部</a></li>
+                <li><a href="./south/south.html">南部</a></li>
               </ul>
           </li>
         </ul>
         <ul>
           <li class="dropdown">
             <a href="membership.html"><i class="fas fa-user"></i> 帳號</a>
-              <ul class="dropdown-content">
-                <li><a href="login.html">帳號登入/註冊</a></li>
-                <li><a href="membership.html">會員資料</a></li>
-                <li><a href="staff_login.html">賣家登入</a></li>
-                <li><a href="staff.html">賣家中心</a></li>
-              </ul>
+            <ul class="dropdown-content">
+              <li><a href="login.html">帳號登入/註冊</a></li>
+              <li><a href="membership.html">會員資料</a></li>
+              <li><a href="staff_login.html">賣家登入</a></li>
+              <li><a href="staff.html">賣家中心</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -47,78 +49,67 @@
     </nav>
   </header>
 
-    <div class="staff">
-        <div class="top">
-          <li class="dropdown">
-            </i>商品</a>
-              <ul class="dropdown-content">
-                <li><a href="">商品名</a></li>
-                <li><a href="">商品刪除</a></li>
-                <li><a href="">商品價格</a></li>
-              </ul>
+  <div class="staff">
+    <div class="top">
+      <button class="link merchandise"><i class="fas fa-eye"></i> 商品頁面</button>
+      <button class="link search"><i class="fas fa-pen"></i> 瀏覽訂單</button>
+    </div>
 
-              <li><a href="">瀏覽訂單</a></li>
-          </li>
-            </div>
-        </div>
-
+    <div class="staff-product">
+        <!-- Product Content -->
         <div class="product">
-            <h2>商品名</h2>
-
-            <h2>商品刪除</h2>
-            <div class="move_product">
-                <h3>上架商品</h3>
-            </div>
-            <div class="remove_product">
-                <h3>下架商品</h3>
-            </div>
-
-            <h2>商品價格</h2>
-            
-            </div>
-        </div>
-
-        <div class="order">
-            <h2>瀏覽訂單</h2>
-            <div class="order_list">
-              <div class="checkout-container">
-                <section class="order-details">
-                    <h2>訂單詳情</h2>
-        
-                    <div class="product">
-                        <img src="../img/北/金山芋園.jpg" alt="商品1">
-                        <div class="product-info">
-                            <h3>商品1</h3>
-                            <p>價錢: $10</p>
-                            <p>庫存: 2</p>
-                            <p>總計: $20</p>
-                        </div>
-                    </div>
-        
-                    <div class="product">
-                        <img src="path/to/product2.jpg" alt="商品2">
-                        <div class="product-info">
-                            <h3>商品2</h3>
-                            <p>價錢: $20</p>
-                            <p>庫存: 3</p>
-                            <p>總計: $20</p>
-                        </div>
-                    </div>
-        
-                    <!-- 其他商品內容... -->
-                </section>
-              </div>
-            </div>
+          <h2>商品名</h2>
+          <h2>商品刪除</h2>
+          <div class="move_product">
+            <h3>上架商品</h3>
+          </div>
+          <div class="remove_product">
+            <h3>下架商品</h3>
+          </div>
+          <h2>商品價格</h2>
         </div>
     </div>
 
-    <footer>
-      <h2 class="footer-title">ㄙ口美食團購網</h2>
-      <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../bgimg/map.jpg" alt=""></a></div>	
-      <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
-      <hr>
-      <br><br>
-      <p class="footer-title">Copyright © 2023 All rights reserved.</p>
-    </footer>
+    <div class="staff-order">
+      <h2>瀏覽訂單</h2>
+      <div class="order_list">
+        <div class="checkout-container">
+          <section class="order-details">
+            <h2>訂單詳情</h2>
+            <div class="product">
+              <img src="../img/北/金山芋園.jpg" alt="商品1">
+              <div class="product-info">
+                <h3>商品1</h3>
+                <p>價錢: $10</p>
+                <p>庫存: 2</p>
+                <p>總計: $20</p>
+              </div>
+            </div>
+            <div class="product">
+              <img src="path/to/product2.jpg" alt="商品2">
+              <div class="product-info">
+                <h3>商品2</h3>
+                <p>價錢: $20</p>
+                <p>庫存: 3</p>
+                <p>總計: $20</p>
+              </div>
+            </div>
+            <!-- 其他商品內容... -->
+          </section>
+        </div>
+      </div>
+    </div>
+</div>
+
+<footer>
+  <h2 class="footer-title">ㄙ口美食團購網</h2>
+  <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../../bgimg/map.jpg" alt=""></a></div>
+  <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
+  <hr>
+  <br><br>
+  <p class="footer-title">Copyright 此網站主要以教學用途使用.</p>
+</footer>
+  <script src="../Javascript/staff.js"></script>
 </body>
+
 </html>

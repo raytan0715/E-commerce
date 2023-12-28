@@ -183,11 +183,11 @@
 
     <footer>
       <h2 class="footer-title">ㄙ口美食團購網</h2>
-      <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../bgimg/map.jpg" alt=""></a></div>	
+      <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../../bgimg/map.jpg" alt=""></a></div>
       <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
       <hr>
       <br><br>
-      <p class="footer-title">Copyright © 2023 All rights reserved.</p>
+      <p class="footer-title">Copyright 此網站主要以教學用途使用.</p>
     </footer>
 </body>
     

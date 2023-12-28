@@ -193,40 +193,78 @@
 
                 <div class="feedback">
                     <form action="" method="post">
-                        <div class="my-rating"></div><!--評分星星-->
-                        <textarea id="review" name="review" rows="4" cols="50"
-                            placeholder="輸入評論"></textarea><!--評價留言板-->
-                        <br>
-                        <input type="submit" value="Submit">
+                      <!-- 先在div最外層設立一個id -->
+          
+                      <div class="star" id="star-rating">
+                        <!-- 找到所有的icon，並設立一個data-index，用來判斷點擊的是哪一個星星 -->
+                        <iconify-icon icon="material-symbols:star-outline" width="40" data-index="1"
+                          class="star-icon"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="2"
+                          width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="3"
+                          width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="4"
+                          width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="5"
+                          width="40"></iconify-icon>
+                      </div>
+          
+                      <textarea id="review" name="review" rows="4" cols="50" placeholder="輸入評論"></textarea><!--評價留言板-->
+                      <br>
+                      <input type="submit" value="Submit">
                     </form>
+                  </div>
+          
                 </div>
-
-            </div>
-        </div>
-
-    </div><!--container結束-->
-
-    <footer>
-        <h2 class="footer-title">ㄙ口美食團購網</h2>
-        <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
-        <hr>
-        <br><br>
-        <p class="footer-title">Copyright © 2023 All rights reserved.</p>
-    </footer>
-
-    <script>
-        $(document).ready(function () {
-            $(".my-rating").starRating({
-                initialRating: 4,
-                strokeColor: '#894A00',
-                strokeWidth: 10,
-                starSize: 25
-            });
-        });
-    </script>
-
-    <script src="../../Javascript/star.js"></script>
-    <script src="../../Javascript/product_detail.js"></script>
+              </div>
+          
+            </div><!--container結束-->
+          
+            <footer>
+              <h2 class="footer-title">ㄙ口美食團購網</h2>
+              <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="../../bgimg/map.jpg" alt=""></a></div>
+              <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
+              <hr>
+              <br><br>
+              <p class="footer-title">Copyright 此網站主要以教學用途使用.</p>
+            </footer>
+          
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                // 找到最外層的div
+                const starRating = document.getElementById("star-rating");
+          
+                // 找到所有的icon
+                const starIcons = starRating.querySelectorAll(".star-icon");
+          
+                // 將所有的icon加上click事件
+                starIcons.forEach((starIcon) => {
+                  starIcon.addEventListener("click", function () {
+                    // 找到點擊的icon的data-index 並轉成數字
+                    const clickedIndex = parseInt(this.getAttribute("data-index"));
+          
+                    // starsIcons是一個陣列，所以可以用forEach來判斷 跑迴圈 全部都跑一遍
+                    starIcons.forEach((icon, index) => {
+                      // 如果index小於點擊的index，就加上selected的class，並且改變icon
+                      if (index < clickedIndex) {
+                        icon.setAttribute("icon", "material-symbols:star");
+                      }
+                      // 如果index小於點擊的index，就加上selected的class，並且改變icon 變成空心
+                      else {
+                        icon.setAttribute("icon", "material-symbols:star-outline");
+                      }
+                    });
+          
+                    // 在這裏你可以將 clickedIndex 送到後端，並更新資料庫
+          
+                    console.log("Selected Rating: " + clickedIndex);
+                  });
+                });
+              });
+            </script>
+          
+            <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+            <script src="../../Javascript/product_detail.js"></script>
 </body>
 
 </html>

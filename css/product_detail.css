@@ -146,3 +146,9 @@ input[type="submit"] {
 .tab .product-comment,.tab .write-comment{
   font-size: 11px;
 }
+/*星星*/
+.star {
+  display: flex;
+  justify-content: center;
+  color: gold;
+}
