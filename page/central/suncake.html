@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/product_detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/star-rating-svg.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <title>商品資訊</title>
 </head>
@@ -151,16 +150,18 @@
               <!-- 最後想要弄js把後端資料庫接到這裡的話星星顯示設定的話 -->
 
               <!-- 星星評論 id或class更改 -->
-              <div class="star" id="">
+              <div class="star comment-star">
                 <!-- 找到所有的icon，並設立一個data-index，用來判斷點擊的是哪一個星星 -->
-                <iconify-icon icon="material-symbols:star-outline" width="40" data-index="1"
+                <iconify-icon icon="material-symbols:star" width="40" data-index="1"
                   class="star-icon"></iconify-icon>
-                <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="2"
+                <iconify-icon icon="material-symbols:star" class="star-icon" data-index="2"
                   width="40"></iconify-icon>
-                <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="3"
+                <iconify-icon icon="material-symbols:star" class="star-icon" data-index="3"
                   width="40"></iconify-icon>
+                  <!-- icon="material-symbols:star" 標記為星星 -->
                 <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="4"
                   width="40"></iconify-icon>
+                  <!-- icon="material-symbols:star-outline"  標記為空的星星-->
                 <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="5"
                   width="40"></iconify-icon>
               </div>
@@ -177,17 +178,19 @@
               </div>
 
               <!-- 星星評論 id或class更改 -->
-              <div class="star" id="">
+              <div class="star comment-star">
                 <!-- 找到所有的icon，並設立一個data-index，用來判斷點擊的是哪一個星星 -->
-                <iconify-icon icon="material-symbols:star-outline" width="40" data-index="1"
+                <iconify-icon icon="material-symbols:star" width="40" data-index="1"
                   class="star-icon"></iconify-icon>
-                <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="2"
+                <iconify-icon icon="material-symbols:star" class="star-icon" data-index="2"
                   width="40"></iconify-icon>
-                <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="3"
+                <iconify-icon icon="material-symbols:star" class="star-icon" data-index="3"
                   width="40"></iconify-icon>
-                <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="4"
+                  <!-- icon="material-symbols:star" 標記為星星 -->
+                <iconify-icon icon="material-symbols:star" class="star-icon" data-index="4"
                   width="40"></iconify-icon>
-                <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="5"
+                  <!-- icon="material-symbols:star-outline"  標記為空的星星-->
+                <iconify-icon icon="material-symbols:star" class="star-icon" data-index="5"
                   width="40"></iconify-icon>
               </div>
               <span class="user-comment">出貨速度快</span>
@@ -204,16 +207,18 @@
               </div>
 
               <!-- 星星評論 id或class更改 -->
-              <div class="star" id="">
+              <div class="star comment-star">
                 <!-- 找到所有的icon，並設立一個data-index，用來判斷點擊的是哪一個星星 -->
-                <iconify-icon icon="material-symbols:star-outline" width="40" data-index="1"
+                <iconify-icon icon="material-symbols:star" width="40" data-index="1"
                   class="star-icon"></iconify-icon>
                 <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="2"
                   width="40"></iconify-icon>
                 <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="3"
                   width="40"></iconify-icon>
+                  <!-- icon="material-symbols:star" 標記為星星 -->
                 <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="4"
                   width="40"></iconify-icon>
+                  <!-- icon="material-symbols:star-outline"  標記為空的星星-->
                 <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="5"
                   width="40"></iconify-icon>
               </div>
@@ -266,16 +271,45 @@
     document.addEventListener("DOMContentLoaded", function () {
       // 找到最外層的div
       const starRating = document.getElementById("star-rating");
-
+      //找到後端的星星
+      const commentStar=document.getElementsByClassName("comment-star");
       // 找到所有的icon
       const starIcons = starRating.querySelectorAll(".star-icon");
+
+      //後端回傳資料
+      $.ajax({
+        type:"post",
+        url:"",//後端資料庫的url
+        datatype:"Json",
+        data: data,
+        async:true,
+        //後端回傳觸發的事件
+        success:function(m){
+          // m 後端回傳的資料
+          const clickedIndex=parseInt(m.data[i]);//接收後端回傳的星星個數
+
+          //starsIcons是一個陣列，所以可以使用forEach診斷 跑迴圈
+          commentStar.forEach((icon,index)=>{
+            //如果index小於點擊的index，就加上selected的class，並改變icon
+            if (index < clickedIndex) {
+              icon.setAttribute("icon", "material-symbols:star");
+            }
+            // 如果index小於點擊的index，就加上selected的class，並且改變icon 變成空心
+            else {
+              icon.setAttribute("icon", "material-symbols:star-outline");
+            }
+          });
+        },
+        error:function (XMLHttpResquest,textStatus,errorThrown) {  
+          alert("抱歉無法取得相應資料");
+        }
+      });
 
       // 將所有的icon加上click事件
       starIcons.forEach((starIcon) => {
         starIcon.addEventListener("click", function () {
           // 找到點擊的icon的data-index 並轉成數字
           const clickedIndex = parseInt(this.getAttribute("data-index"));
-
           // starsIcons是一個陣列，所以可以用forEach來判斷 跑迴圈 全部都跑一遍
           starIcons.forEach((icon, index) => {
             // 如果index小於點擊的index，就加上selected的class，並且改變icon
