@@ -6,7 +6,9 @@ function loginForm() {
         alert("欄位不可空白。");
     } else {
         alert("登入成功");
-        window.location.href('staff.html');
+        window.open("./staff.html");
+        // window.location.href = "membership.html";
+        /*後端要更改位址設定，window.location.herf 在此*/
     }
 }
 function cancel() {
