@@ -16,6 +16,6 @@ function cancel() {
     // 如果使用者點擊了確認按鈕，則執行跳轉
     if (isConfirmed) {
       alert("掰掰");
-      window.location.href = "first_page.html";
+      window.location.href = "./index.html";
     }return
   }
