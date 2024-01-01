@@ -121,7 +121,7 @@ width: 1100px; margin: 20px auto 0 auto;*/
   width: 75px;
 }
 .comment-item .user-comment{
-  text-align: center;
+  text-align: left;
   color: #000;
   padding: 20px;
 }
