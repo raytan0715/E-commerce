@@ -39,11 +39,8 @@ function signupForm() {
   } else {
     
     alert("註冊成功！");
-    /*這邊用window.location.href('member.jsp');
-    還是window.open('member.jsp');
-     */
-    window.location.href = "./membership.html";
-     // window.location.href = "./jsp/member.jsp";
+    window.open("./membership.html")
+    // window.location.href = "./jsp/member.jsp";
     // window.location.href = "./membership.html";
     /*後端要更改位址設定，window.location.herf 在此*/
   }
