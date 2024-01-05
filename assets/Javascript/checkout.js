@@ -19,7 +19,7 @@ function register() {
 function placeOrder() {
 
     window.alert("訂單已成功購買！感謝您的購物。");
-    window.open("./membership.html");
+    window.location.href = "./membership.html";
     // window.location.href = "./membership.html";
   
 }
