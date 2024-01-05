@@ -41,7 +41,7 @@ h5:hover {
   color: black;
 }
 
-form input {
+input {
   margin-bottom: 10px; /* 調整 input 之間的垂直間距 */
   width: 70%;
   padding: 8px;
