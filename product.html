@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/product.css">
+  <link rel="stylesheet" href="./assets/css/cookie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>product</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="icon">
+        <a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
+      </div>
+      <div class="row">
+        <ul>
+          <li class="dropdown">
+            <a href="./product.html"><i class="fas fa-cube"></i>產品</a>
+            <ul class="dropdown-content">
+              <li><a href="./product.html">全部</a></li>
+              <li><a href="./north.html">北部</a></li>
+              <li><a href="./central.html">中部</a></li>
+              <li><a href="./south.html">南部</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="dropdown">
+            <a href="./membership.html"><i class="fas fa-user"></i> 帳號</a>
+            <ul class="dropdown-content">
+              <li><a href="./login.html">帳號登入/註冊</a></li>
+              <li><a href="./membership.html">會員資料</a></li>
+              <li><a href="./staff_login.html">賣家登入</a></li>
+              <li><a href="./staff.html">賣家中心</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li><a href="./cart.html"><i class="fas fa-shopping-cart"></i> 購物車</a></li>
+        <li><a href="./about_us.html"><i class="fas fa-info-circle"></i> 關於我們</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <div class="product">
+      <div class="top">
+        <div class="title">
+          <h1>品牌介紹</h1>
+        </div>
+        <div class="produce">
+          <p>我們的品牌將能過透夠簡單的操作，便將各地美食送到家，並且可以...</p>
+        </div>
+        <div class="button-container">
+          <a href="./about_us.html" class="button">點擊以查看更多</a>
+        </div>
+      </div>
+
+
+      <!--熱門商品-->
+      <div class="product-card"><!--最外層的框架，設定整個card多大-->
+        <div class="card"><!--card包覆整個的頁面，file.jpg-->
+          <P class="card-title">熱門商品</P>
+          <div class="row-justify-center"><!--row是style.css裡面設定display:flex;和justify-content:space-center;-->
+
+            <!--我們的設計草圖是在這一主頁面每區塊都只有三個產品，再點進查看更多時才會跳到北中南三地方-->
+            <template>
+              <div class="col"><!--col每個商品card區塊-->
+                <div class="card-item"><!--設定每個card區塊的大小-->
+                  <a href="../test.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                    <div class="card-image">
+    
+                      <!--在此插入圖片-->
+                      
+                      <img src="../img/375px-貢丸米粉湯.jpg" alt="">
+                    </div>
+                    <div class="card-detail">
+    
+                      <!--在此更動商品名稱以及價錢庫存-->
+    
+                      <p class="product-name">新竹貢丸湯</p><!--產品名稱-->
+                      <div class="detail-container"><!--價錢和庫存-->
+                        <span class="product-price">$200</span>
+                        <span class="product-stock">庫存 20</span>
+                      </div><!--detail-container結束-->
+                    </div>
+                  </a>
+                </div>
+              </div><!--col結束-->
+            </template>
+            
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/north/cakeRoll.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">奶凍捲</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$180</span>
+                      <span class="product-stock">庫存 30</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a><!--a結束-->
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/central/PineappleCake.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">微熱山丘鳳梨酥 - 15個裝</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$750</span>
+                      <span class="product-stock">庫存 60</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/south/Mango.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">玉井愛文芒果</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$1350</span>
+                      <span class="product-stock">庫存 20</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+          </div><!--row結束-->
+        </div><!--card結束-->
+      </div><!--product-card-->
+
+
+      <!--新進商品-->
+      <div class="product-card"><!--最外層的框架，設定整個card多大-->
+        <div class="card"><!--card包覆整個的頁面，file.jpg-->
+          <P class="card-title">新進商品</P>
+
+          <div class="row-justify-center"><!--row是style.css裡面設定display:flex;和justify-content:space-center;-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/north/taro.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">【芋圓王】生鮮冷凍芋圓/地瓜圓</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$170</span>
+                      <span class="product-stock">庫存: 8</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/south/Milkfish.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">虱目魚肚280g~320g	</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$200</span>
+                      <span class="product-stock">庫存 20</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/central/chickenfeet.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">黑竹園招牌雞腳凍</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$180</span>
+                      <span class="product-stock">庫存 26</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+          </div><!--row結束-->
+        </div><!--card結束-->
+      </div><!--product-card-->
+
+
+      <!--中間點擊次數和感謝-->
+      <div class="report">
+        <div class="card2">
+          <!--後端要設計網頁點擊次數的話就在這-->
+          <div id="counterDisplay">
+            <!--顯示訪客計數的區域 -->
+            <span id="visitorCount"></span>
+          </div>
+                  
+          
+          
+          <p>感謝您選擇我們的產品！為了確保您收到的商品保持最佳的新鮮程度，我們提供便利的物流到府服務。從我們的倉庫直達您的門前，您可以輕鬆享受到貨的便利。我們精心挑選和包裝每一份商品，確保它們在運送的過程中保持最佳的品質。
+            <br><br>
+            在整個物流過程中，我們將採取最先進的保鮮措施，以確保產品在運送過程中不受損壞。我們的團隊致力於提供高效、可靠的物流服務，讓您的購物體驗更加愉快。
+            <br><br>
+            每一次的交易，都是對我們品質承諾的一次展現。我們期待著您收到我們的商品時能感受到我們的用心和專業。感謝您對我們的信任，讓我們一起為美味而精彩的生活努力！如有任何疑問或特殊需求，請隨時與我們聯繫。期待為您提供最優質的服務！
+          </p>
+        </div>
+      </div>
+
+      <!--北部產品-->
+      <div class="product-card"><!--最外層的框架，設定整個card多大-->
+        <div class="card"><!--card包覆整個的頁面，file.jpg-->
+          <P class="card-title">北部商品</P>
+
+          <div class="row-justify-center"><!--row是style.css裡面設定display:flex;和justify-content:space-center;-->
+            
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/north/cakeRoll.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">奶凍捲</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$180</span>
+                      <span class="product-stock">庫存 30</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a><!--a結束-->
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/north/DriedPersimmon.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">新埔新力柿餅</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$230</span>
+                      <span class="product-stock">庫存: 50</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/north/IronEgg.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">原味鐵蛋-(雞蛋滷製)</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$120</span>
+                      <span class="product-stock">庫存: 15</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+          </div><!--row結束-->
+          <div class="button-container"><!--按鈕點擊查看更多-->
+            <a href="./north.html" class="button">點擊以查看更多</a>
+          </div><!--button-container結束-->
+        </div><!--card結束-->
+      </div><!--product-card-->
+
+
+      <!--中部-->
+      <div class="product-card"><!--最外層的框架，設定整個card多大-->
+        <div class="card"><!--card包覆整個的頁面，file.jpg-->
+          <P class="card-title">中部商品</P>
+          <div class="row-justify-center"><!--row是style.css裡面設定display:flex;和justify-content:space-center;-->
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/central/PineappleCake.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">微熱山丘鳳梨酥 - 15個裝</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$750</span>
+                      <span class="product-stock">庫存 60</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/central/suncake.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">經典太陽餅禮盒</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$499</span>
+                      <span class="product-stock">庫存 39</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/central/chickenfeet.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">黑竹園招牌雞腳凍</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$180</span>
+                      <span class="product-stock">庫存 26</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+          </div><!--row結束-->
+          <div class="button-container"><!--按鈕點擊查看更多-->
+            <a href="./central.html" class="button">點擊以查看更多</a>
+          </div><!--button-container結束-->
+        </div><!--card結束-->
+      </div><!--product-card-->
+
+      
+       <!--南部-->
+       <div class="product-card"><!--最外層的框架，設定整個card多大-->
+        <div class="card"><!--card包覆整個的頁面，file.jpg-->
+          <P class="card-title">南部商品</P>
+          <div class="row-justify-center"><!--row是style.css裡面設定display:flex;和justify-content:space-center;-->
+            
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/south/TurkeyRice.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">【頂六江家火雞肉飯】火雞肉絲真空包</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$450</span>
+                      <span class="product-stock">庫存 10</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/south/PeanutBrittle.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">木侖花生糖	</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$375</span>
+                      <span class="product-stock">庫存: 30</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+
+            <div class="col"><!--col每個商品card區塊-->
+              <div class="card-item"><!--設定每個card區塊的大小-->
+                <a href="./TurkeyRice.html"><!--點擊圖片和文字都可以跳轉置商品頁-->
+                  <div class="card-image">
+                    <img src="./assets/img/south/SquaerCookie.jpg" alt="">
+                  </div>
+                  <div class="card-detail">
+                    <p class="product-name">恩典方塊酥-典藏禮盒綜合單片(16入)</p><!--產品名稱-->
+                    <div class="detail-container"><!--價錢和庫存-->
+                      <span class="product-price">$280</span>
+                      <span class="product-stock">庫存: 15</span>
+                    </div><!--detail-container結束-->
+                  </div>
+                </a>
+              </div>
+            </div><!--col結束-->
+          </div><!--row結束-->
+          <div class="button-container"><!--按鈕點擊查看更多-->
+            <a href="./south.html" class="button">點擊以查看更多</a>
+          </div><!--button-container結束-->
+        </div><!--card結束-->
+      </div><!--product-card-->
+      <a href="#top"><img class="backtop" src="./assets/img/bgimg/back_top.png" alt="top"></a>
+    </div>
+  </div>
+
+  <!--cookie設定-->
+  <div id="cookie-popup">
+    <p>我們使用cookie來提供和改善我們的服務。繼續使用本網站，您同意我們使用cookie。</p>
+    <button class="accept-cookies">同意</button>
+  </div>
+
+  <footer>
+    <h2 class="footer-title">ㄙ口美食團購網</h2>
+    <div class="footer-map"><a href="https://maps.app.goo.gl/3DbQ4KHq2NtmK29Y8" target="_blank"><img src="./assets/img/bgimg/map.jpg" alt=""></a></div>
+    <h1 class="footer-title">聯繫方式(我們的email):<a href="mailto:s811227@sphs.hc.edu.tw">s811227@sphs.hc.edu.tw</a></h1>
+    <hr>
+    <br><br>
+    <p class="footer-title">Copyright 此網站主要以教學用途使用.</p>
+  </footer>
+  <script src="./assets/Javascript/product.js"></script>
+  <script src="./assets/Javascript/cookie.js"></script>
+</body>
+
+</html>

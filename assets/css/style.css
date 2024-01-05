@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+*{/*字體設計*/
+
+    font-family: "cwTeXYen", sans-serif;
+
+}
+/*NAV區塊*/
+/*當今天是長頁面，若是要產品頁要弄得畫 header class="position-fixed"*/
+.position-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+/*不想要頁面往下滑nav也往下時用這個*/
+nav {
+    display: flex;
+    height: 100px;
+    background-color: #7C9788;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/*排版用，在card_item上面會用到*/
+.row{
+    display:flex ;
+}
+
+.icon, .nav-items {
+    display: flex;
+    align-items: center;
+}
+/*商標*/
+.icon {
+    margin-right: auto;
+}
+.icon img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; 
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 15px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav li:hover a {
+    color: #0F2C18;
+}
+
+.dropdown-content {
+    font-size: 13px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;/*新增這個，這樣在login.css就沒問題了*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*body區塊*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/*到頁面頂部(圖片)*/
+.backtop {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* 将 right 属性设置为调整到右侧 */
+    z-index: 1;
+    /* 保证图标位于页面上方 */
+}
+
+/*footer區塊*/
+footer {
+    margin-top: 10px;
+    background-color: #7C9788;
+    padding: 10px;
+    height: auto;
+}
+.footer-title{
+    color: white;
+}
+footer .footer-title a {
+    color: white;
+}
+footer .footer-title a:hover{
+    color: green;
+}
+/*map*/
+.footer-map img{
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+	border-color: #ccc;
+}
+@media screen and (max-width: 768px) {
+
+    .footer-title{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
