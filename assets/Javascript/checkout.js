@@ -20,6 +20,5 @@ function placeOrder() {
 
     window.alert("訂單已成功購買！感謝您的購物。");
     window.location.href = "./membership.html";
-    // window.location.href = "./membership.html";
-  
+    // 不知為何在github顯示出來的結果是window.open("./membership.html");
 }
