@@ -5,10 +5,12 @@
 body {
     background-color: lightgray;
 }
+
 /*產品介紹*/
 .product {
     width: 1110px;
-    margin: 0 auto;/*置中*/
+    margin: 0 auto;
+    /*置中*/
 }
 
 .top {
@@ -38,6 +40,7 @@ body {
     border-radius: 10%;
     background-color: white;
 }
+
 /*產品介紹*/
 
 /*點擊以查看更多*/
@@ -58,9 +61,11 @@ body {
 .button-container .button {
     color: white;
 }
-.button-container a{
+
+.button-container a {
     text-decoration: none;
 }
+
 /*點擊以查看更多*/
 
 /*原hotitems newitem等等改成這個*/
@@ -82,7 +87,7 @@ body {
 }
 
 /*北中南各自的商品頁面的card區塊，主要是背景、字形等等設定*/
-.product-card .card-respectively{
+.product-card .card-respectively {
     padding: 5px 30px;
     margin: 20px;
     background-color: rgb(245, 255, 235);
@@ -91,34 +96,37 @@ body {
 }
 
 
-.row-justify-center{
+.row-justify-center {
     display: flex;
-    justify-content:center;
-    flex-wrap: wrap;/*自動換行*/
-    
+    justify-content: center;
+    flex-wrap: wrap;
+    /*自動換行*/
+
 }
-.col{
+
+.col {
     background-color: aliceblue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 2);
     margin: 20px;
 }
 
 /*card-title在北中南各自的*/
-.product-card .card-title-respectively{
+.product-card .card-title-respectively {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     text-shadow: 4px 4px 4px grey;
 }
+
 /*在product頁面的card-title*/
 .product-card .card-title {
-    margin-bottom:20px;
+    margin-bottom: 20px;
     font-size: 30px;
     color: blue;
 }
 
 
-.card-item a{
+.card-item a {
     text-decoration: none;
     color: #000;
 }
@@ -128,13 +136,16 @@ body {
     height: 400px;
     width: 250px;
 }
-.product-card .card-image img{
+
+.product-card .card-image img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 240px;
     width: 250px;
 }
+
+
 .product-card .card-detail {
     width: 100%;
     height: 80px;
@@ -142,18 +153,27 @@ body {
 }
 
 .card-detail .product-name {
+    margin: 0 auto;
+    /*新增*/
+    align-items: center;
     font-size: 25px;
     font-weight: bold;
 }
-.card-detail .product-price {
+
+.product-price {
     font-size: 20px;
     color: red;
 }
-.card-detail .product-stock {
+
+.product-stock {
     font-size: 20px;
     color: orangered;
 }
+
 .detail-container {
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -165,10 +185,11 @@ body {
     font-size: 20px;
     color: black;
 }
+
 .card2 {
     padding: 20px;
     background-color: #FFFCEC;
-    width:100%;
+    width: 100%;
     height: 450px;
     border-radius: 10%;
     border-color: gray;
@@ -181,33 +202,35 @@ body {
 @media screen and (max-width: 775px) {
 
     .top {
-        
+
         background-size: cover;
         object-fit: cover;
         border-radius: 10%;
         width: 35%;
         padding-bottom: 5px;
     }
-    
+
     .title {
         text-align: center;
         margin: 50px;
         font-size: 37px;
-        
-        
+
+
     }
+
     .produce {
-        
+
         width: 95%;
-        
+
         padding: 1px;
-        
+
     }
+
     .button-container {
-        
-        
+
+
         height: 25px;
-       
+
     }
 
     .report {
@@ -219,19 +242,27 @@ body {
         /* flex-direction: column; */
         /* flex-wrap: nowrap; */
     }
+
     .product-card {
-        overflow-x: auto; /* 允許橫向滾動 */
-        white-space: nowrap; /* 禁止文本折行 */
+        overflow-x: auto;
+        /* 允許橫向滾動 */
+        white-space: nowrap;
+        /* 禁止文本折行 */
     }
 
     .card-item {
-        flex: 0 0 auto; /* 不可伸縮，固定寬度 */
-        margin-right: 10px; /* 右邊距，用於區隔不同卡片 */
+        flex: 0 0 auto;
+        /* 不可伸縮，固定寬度 */
+        margin-right: 10px;
+        /* 右邊距，用於區隔不同卡片 */
     }
+
     .row-justify-center {
         display: flex;
-        justify-content: space-between; /* 在每個項目之間平均分配空間 */
-        align-items: center; /* 在垂直方向上居中對齊 */
+        justify-content: space-between;
+        /* 在每個項目之間平均分配空間 */
+        align-items: center;
+        /* 在垂直方向上居中對齊 */
         /* 其他樣式設置，如 padding、margin 等 */
     }
 }

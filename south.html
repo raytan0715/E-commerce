@@ -45,8 +45,8 @@
         <li><a href="./about_us.html"><i class="fas fa-info-circle"></i> 關於我們</a></li>
       </ul>
       <ul>
-        <li><a href="./logout.jsp"><i class="fas fa-sign-out-alt"></i>會員登出</a></li>
-        <!-- 後端的人弄 -->
+        <li id="logoutLink" style="display: none;"><a href="./login.html" onclick="toggleLoginStatus()"><i class="fas fa-sign-out-alt"></i>會員登出</a></li>
+          <li id="loginLink"><a href="./login.html" onclick="toggleLoginStatus()"><i class="fas fa-user"></i> 帳號登入/註冊</a></li>
       </ul>
     </nav>
   </header>
@@ -263,5 +263,6 @@
   </footer>
 
   <script src="./assets/Javascript/cookie.js"></script>
+  
 
 </html>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/about_us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="./assets/Javascript/about_us.js" defer></script>
 </head>
 
 <body>
@@ -44,8 +45,8 @@
         <li><a href="./about_us.html"><i class="fas fa-info-circle"></i> 關於我們</a></li>
       </ul>
       <ul>
-        <li><a href="./logout.jsp"><i class="fas fa-sign-out-alt"></i>會員登出</a></li>
-        <!-- 後端的人弄 -->
+        <li id="logoutLink" style="display: none;"><a href="./login.html" onclick="toggleLoginStatus()"><i class="fas fa-sign-out-alt"></i>會員登出</a></li>
+          <li id="loginLink"><a href="./login.html" onclick="toggleLoginStatus()"><i class="fas fa-user"></i> 帳號登入/註冊</a></li>
       </ul>
     </nav>
   </header>
@@ -87,11 +88,7 @@
               <h2>資管二甲 鐘子傑</h2>
               <p>這次的團隊合作學習讓我深刻體會到HTML、CSS和JS的使用方式，並透過共同努力和統合，我們逐漸的建立了一個的電商平台。HTML提供了結構的基礎，CSS賦予了頁面獨特的風格。我們彼此之間利用課餘時間和Line來討論以確保有順暢的開發過程。這次經歷不僅加深了我對前端技術的理解，也讓我意識到良好的團隊合作是實現複雜專案成功的不可或缺的元素。</p>
             </div>
-            <div class="about-item">
-              <img src="./assets/img/Jay_profile.jpg" alt="Jay">
-              <h2>資管二甲 鐘子傑</h2>
-              <p>這次的團隊合作學習讓我深刻體會到HTML、CSS和JS的使用方式，並透過共同努力和統合，我們逐漸的建立了一個的電商平台。HTML提供了結構的基礎，CSS賦予了頁面獨特的風格。我們彼此之間利用課餘時間和Line來討論以確保有順暢的開發過程。這次經歷不僅加深了我對前端技術的理解，也讓我意識到良好的團隊合作是實現複雜專案成功的不可或缺的元素。</p>
-            </div>
+            
             <div class="about-item">
               <img src="./assets/img/Jane_profile.jpg" alt="Jane">
               <h2>資管二乙 蘇英禎</h2>
@@ -120,5 +117,6 @@
       <p class="footer-title">Copyright 此網站主要以教學用途使用.</p>
     </footer>
 </body>
+
 
 </html>

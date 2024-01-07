@@ -1,15 +1,26 @@
-const view = document.querySelector('.view');
-const feedback = document.querySelector('.feedback');
-
-document.querySelector('.link.merchandise').addEventListener('click', () => {
-  feedback.style.display = 'none';
-  view.style.display = 'block';
-});
-
-document.querySelector('.link.search').addEventListener('click', () => {
-  feedback.style.display = 'block';
-  view.style.display = 'none';
-});
+function getVisitorCount() {
+              var xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  document.getElementById("visitorCount").innerHTML = this.responseText;
+                }
+              };
+              xhttp.open("GET", "showCounter.jsp", true);
+              xhttp.send();
+            }
+        
+// 每次網頁載入完成時都增加訪客計數
+window.onload = function() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        // 在增加訪客計數後重新獲取並顯示計數
+        getVisitorCount();
+    }
+    };
+    xhttp.open("POST", "increaseCounter.jsp", true);
+    xhttp.send();
+};
 var loginManager = {
   isLoggedIn: localStorage.getItem('isLoggedIn') === 'true' || false,
   toggleLoginStatus: function () {
